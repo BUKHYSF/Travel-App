@@ -1,0 +1,40 @@
+#div_input {
+  grid-area: inp;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas: 'scity scity scity' 
+                       'sdate sdate sdate'
+                       'ssub ssub ssub';
+  grid-gap: 2.5 px;
+}
+
+#citysec {
+  grid-area: scity;
+}
+
+#datesec {
+  grid-area: sdate;
+}
+
+#section_submit {
+  grid-area: ssub;
+
+}
+
+#submit_button {
+  background-color: #c1bd8c;
+  padding: 0;
+  border: 0;
+
+
+}
+
+#submit_button:hover {
+  background-color: #c6aa79;
+}
+
+#delete_trip:hover {
+  background-color: #808080;
+}
+

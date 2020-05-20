@@ -1,0 +1,53 @@
+
+// import other to main app for using them
+
+@import url('style_contain.scss');
+@import url('style_input.scss');
+
+body {
+  background-color: #5e28b5;
+  background: #8f9d95; // for previous verisons
+  background: -webkit-linear-gradient(
+                  to right,
+                  #30ba6c,
+                  #51966f
+  ); 
+    
+//    new version
+  background: linear-gradient(
+                  to right,
+                  #6cafd6,
+                  #63cc91
+  ); 
+}
+
+.dbox {
+  padding: 1.5px;
+}
+// using media
+@media screen and (max-width: 480px) {
+  #infomationdiv {
+    grid-area: inf;
+    display: grid;
+    grid-template-columns: 1fr 1fr 9fr;
+    grid-gap: 2.5 px;
+    grid-auto-rows: minmax(120px, auto);
+    grid-template-areas: 'hed hed' 'pic pic' 'detail';
+  }
+
+ .head {
+    grid-area: hed;
+  }
+    
+  .image {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    grid-area: pic;
+  }
+  .detailsec {
+    grid-area: detail;
+  }
+ 
+}

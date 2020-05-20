@@ -1,0 +1,47 @@
+#contain {
+  margin: 1 px;
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-auto-rows: minmax(auto, auto);
+  grid-gap: 5px;
+  padding: 1px 1px;
+  grid-template-areas: 'had had had' 
+                       ' inp inp inp'
+                       'infom infom infom';
+}
+
+.h1header {
+  grid-area: had;
+  color: firebrick;
+}
+
+#info {
+  grid-area: infom;
+  display: grid;
+  grid-template-columns: 1fr 5fr 9fr;
+  grid-gap: 3px;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas:  'head head head' 
+                        'img img img' 
+                        'detail detail detail';
+
+}
+
+#image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1.5em;
+
+  grid-area: img;
+}
+
+#details {
+  grid-area: detail;
+  color: rgba(51, 51, 51, 0.94);
+}
+
+#head {
+  grid-area: head;
+  color: #962727;
+}
